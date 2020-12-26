@@ -30,12 +30,12 @@
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=minigrep",
+                    "--lib=minigrep",
                     "--package=minigrep"
                 ],
                 "filter": {
                     "name": "minigrep",
-                    "kind": "bin"
+                    "kind": "lib"
                 }
             },
             "args": [],
