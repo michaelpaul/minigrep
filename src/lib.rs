@@ -42,6 +42,15 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
+/// Case-sensitive search
+///
+/// Search for `query` inside `contents`.
+///
+/// # Examples
+/// ```
+/// let matches = minigrep::search("bar", "foo\nbar\nbaz\n barrier ");
+/// assert_eq!(vec!["bar", " barrier "], matches)
+/// ```
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     contents
         .lines()
