@@ -3,8 +3,7 @@ use std::error::Error;
 
 #[test]
 fn no_argument() {
-    let args = vec![];
-    assert!(Config::new(&args).is_err());
+    assert!(Config::new(std::env::args()).is_err());
 }
 
 #[test]
